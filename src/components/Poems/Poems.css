@@ -1,0 +1,39 @@
+.poem-container {
+    height: 600px; /* Fixed height for the container */
+    width: 100%; /* Full width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    direction: rtl;
+    font-size: 15px;
+  }
+  
+  .poem-card {
+    flex: 1; /* Allow the poem card to grow and take available space */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scroll if content exceeds card height */
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .poem-card img {
+    width: 100%; /* Make sure the image covers the entire card */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 50px;
+    width: 100%; /* Ensure the buttons span the entire width */
+  }
+
+  h2 {
+    margin: 10px;
+  }
+  

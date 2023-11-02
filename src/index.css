@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary-color:#473525 ;
+  --secondary-color:#D2B48C ;
+  --accent-color: #a1836e;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Rubik', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6, p, button {
+  font-family: 'Rubik', sans-serif;
+}
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Rubik', sans-serif;
+  background-color: #ffffff; /* White background for readability */
+  color: var(--primary-color); /* Primary color for text */
+
+}
+
+.navbar {
+  background-color: var(--secondary-color); /* Secondary color for the navbar */
+}
+
+.poem-card {
+  background-color: #ffffff; /* White background for poem cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  border-radius: 10px; /* Rounded corners for elegance */
+}
+
+.navigation-buttons button {
+  background-color: var(--accent-color); /* Accent color for navigation buttons */
+  color: #ffffff; /* White text for contrast */
+}
+
+

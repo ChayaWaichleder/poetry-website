@@ -1,0 +1,39 @@
+
+
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    direction: rtl;
+    height: 10px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
