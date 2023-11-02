@@ -18,7 +18,7 @@ const Contact = () => {
                 <h2>גם לכם יש מה לומר?</h2>
                 <p>
                   אשמח לשמוע(:
-                  שלחו לי מייל ל:<strong>contact@example.com</strong>
+                  שלחו לי מייל ל:<strong>contact@example.com</strong> <br></br>
                   או מלאו פרטים כאן
                 </p>
               </div>
