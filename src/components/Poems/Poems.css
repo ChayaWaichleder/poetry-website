@@ -17,7 +17,7 @@
     border-radius: 10px;
     overflow: hidden;
     column-gap: 20px;
-    text-align: center;
+    text-align: right;
   }
 
   .poem-card img {
