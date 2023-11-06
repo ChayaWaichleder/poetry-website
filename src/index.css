@@ -1,7 +1,7 @@
 :root {
-  --primary-color:#473525 ;
-  --secondary-color:#D2B48C ;
-  --accent-color: #a1836e;
+  --primary-color:#123940 ;
+  --secondary-color: transparent ;
+  --accent-color: transparent;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Rubik', sans-serif;
-  background-color: #ffffff; /* White background for readability */
+  background-color: #B9EBF8; /* White background for readability */
   color: var(--primary-color); /* Primary color for text */
 
 }
@@ -28,14 +28,12 @@ body {
 }
 
 .poem-card {
-  background-color: #ffffff; /* White background for poem cards */
+  background-color: transparent; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 20px;
   border-radius: 10px; /* Rounded corners for elegance */
 }
 
-.navigation-buttons button {
-  background-color: var(--accent-color); /* Accent color for navigation buttons */
-  color: #ffffff; /* White text for contrast */
-}
+
 
 

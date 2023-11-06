@@ -1,22 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "./Header.css"; // Import styles for Header component
+import logo from "../../jar of love.png";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav className="navbar">
-      <div className="container">
-        <Link to="/" className="navbar-logo">
-          Your Logo
-        </Link>
-        <ul className="navbar-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/poems">Poems</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
+    <header className="header">
+      
+      <div className="logo-container">
+        <img src={logo} alt="Logo" className="logo-image" />
       </div>
-    </nav>
+    </header>
   );
 };
 

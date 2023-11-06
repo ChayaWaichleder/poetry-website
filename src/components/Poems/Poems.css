@@ -1,5 +1,5 @@
 .poem-container {
-    height: 600px; /* Fixed height for the container */
+    height: 650px; /* Fixed height for the container */
     width: 100%; /* Full width */
     display: flex;
     flex-direction: column;
@@ -16,6 +16,8 @@
     background-color: var(--secondary-color);
     border-radius: 10px;
     overflow: hidden;
+    column-gap: 20px;
+    text-align: center;
   }
 
   .poem-card img {
@@ -31,9 +33,17 @@
     margin-top: 10px;
     border-radius: 50px;
     width: 100%; /* Ensure the buttons span the entire width */
+    border: 15px;
+  }
+
+  button {
+    border: 15px;
+    background-color: transparent;
   }
 
   h2 {
     margin: 10px;
   }
+
+ 
   
