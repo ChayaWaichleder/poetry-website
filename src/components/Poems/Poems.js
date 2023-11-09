@@ -21,8 +21,8 @@ const Poems = () => {
   return (
     <div className="poem-container">
       <div className="poem-card">
-        <h2>{currentPoem.title}</h2> {/* Access the title property directly */}
-        <div dangerouslySetInnerHTML={createMarkup(currentPoem.content)} />
+        <h2 className="poem-title">{currentPoem.title}</h2> {/* Access the title property directly */}
+        <div className="poem-content" dangerouslySetInnerHTML={createMarkup(currentPoem.content)} />
       </div>
       <div className="navigation-buttons">
         <button onClick={handlePrevPoem}>&lt; </button>

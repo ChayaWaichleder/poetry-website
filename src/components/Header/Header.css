@@ -10,6 +10,9 @@
   top: 0;
   z-index: 1000;
   justify-content: flex-end;
+  height: 80px;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
 
 .menu-icon {
@@ -76,6 +79,16 @@
   width: 50px;
   margin-right: 10px; /* Add some margin between the logo and navigation links */
   border-radius: 50%;
+}
+
+h1 {
+  margin: 5px;
+}
+
+.header-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #661E23;
 }
 
 .navbar-logo {

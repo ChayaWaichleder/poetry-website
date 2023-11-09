@@ -1,61 +1,63 @@
 /* Contact.css */
 .contact-container {
-    background-color: #D2B48C;
-    width: 25%; /* Set the width of the contact container */
-    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
-    padding: 10px;
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 30%;
-    border-radius: 10px;
-    text-align: right;
-    direction: rtl;
-  }
-  
-  .contact-info,
-  .contact-form {
-    width: 100%;
-    max-width: 100%; /* Set maximum width for the contact box */
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-size: 16px;
-    font-family: 'Rubik', sans-serif;
-  }
-  
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 5px;
-    box-sizing: border-box;
-    font-size: 14px;
-    height: 40px;
-    border-radius: 10px;
-    text-align: right;
-    font-family: 'Rubik', sans-serif;
+  width: 250px; /* Set the width of the contact container */
+  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 350px;
+  border-radius: 1px;
+  text-align: right;
+  direction: rtl;
+  border: 1px solid #661E23;
 
-  }
-  
-  .contact-form button {
-    background-color: #473525;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-align: center;
-  }
-  
-  .contact-form button:hover {
-    background-color: #45a049;
-  }
+}
 
-  .info {
-    width: 50%;
-  }
+.contact-info,
+.contact-form {
+  width: 100%;
+  max-width: 100%; /* Set maximum width for the contact box */
+  margin-bottom: 1px;
+  margin-top: 1px;
+  font-size: 16px;
+  font-family: 'Assistant', sans-serif;
+}
 
-  .form {
-    width: 100%;
-  }
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: calc(100% - 10px); /* Adjusted width to consider padding */
+  padding: 5px;
+  margin-bottom: 1px;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 2px;
+  text-align: right;
+  font-family: 'Assistant', sans-serif;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  width: calc(100% - 10px); /* Adjusted width to consider padding */
+  background-color: #473525;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.contact-form button:hover {
+  background-color: #8B4513;
+}
+
+.form {
+  width: 100%; /* Set form width to 100% */
+}
+
+h2, p {
+  margin: 0px;
+}

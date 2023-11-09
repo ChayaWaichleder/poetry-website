@@ -8,19 +8,22 @@ const Contact = () => {
       <table>
         <tbody>
           <tr>
-            <td className="form">
-              <div className="contact-form">
-                <ContactForm /> {/* Include the ContactForm component here */}
-              </div>
-            </td>
             <td className="info">
               <div className="contact-info">
                 <h2>גם לכם יש מה לומר?</h2>
                 <p>
                   אשמח לשמוע(:
-                  שלחו לי מייל ל:<strong>contact@example.com</strong> <br></br>
+                  שלחו לי מייל ל:<strong>{/* Add a comment inside braces */}</strong>contact@example.com
+                  <br />
                   או מלאו פרטים כאן
                 </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td className="form">
+              <div className="contact-form">
+                <ContactForm /> {/* Include the ContactForm component here */}
               </div>
             </td>
           </tr>

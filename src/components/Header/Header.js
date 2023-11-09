@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css"; // Import styles for Header component
-import logo from "../../jar of love.png";
+import logo from "../../poetry.jfif";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+
 
   return (
     <header className="header">
-      
+      <h1 className="header-title/">שירים של תמיד </h1> 
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo-image" />
       </div>

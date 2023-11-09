@@ -2,13 +2,13 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Poems from "./components/Poems/Poems";
-import About from "./components/About/About"; 
-import Contact from "./components/Contact/Contact"
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
-    <div className="app-container">
-      <Header />
+    <div className="app-container background-image-container">
+        <Header />
       <div className="content-container">
         <div className="about">
           <About />

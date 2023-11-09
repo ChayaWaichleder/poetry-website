@@ -29,33 +29,47 @@ const ContactForm = () => {
   return (
     <div className="contact-form">
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="שם"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="אימייל"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <textarea
-          id="message"
-          name="message"
-          placeholder="כל מה שתרצו לספר לי"
-          rows="4"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="שם"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="אימייל"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colSpan="2">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="כל מה שתרצו לספר לי"
+                  rows="4"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <button type="submit">מחכה לשמוע</button>
       </form>
     </div>
