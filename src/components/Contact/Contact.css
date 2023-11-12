@@ -1,6 +1,6 @@
 /* Contact.css */
 .contact-container {
-  width: 250px; /* Set the width of the contact container */
+  width: 200px; /* Set the width of the contact container */
   max-width: 100%; /* Ensure it doesn't exceed the viewport width */
   padding: 10px;
   box-sizing: border-box;
@@ -8,11 +8,18 @@
   bottom: 0;
   left: 0;
   height: 350px;
-  border-radius: 1px;
+  border-radius: 3px;
   text-align: right;
   direction: rtl;
-  border: 1px solid #661E23;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  background-color: #C0B585;
+  box-shadow: 12px;
+}
 
+.contact-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .contact-info,

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css"; // Import styles for Header component
-import logo from "../../poetry.jfif";
+import logo from "../../poetry.jpg";
 
 const Header = () => {
 

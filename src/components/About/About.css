@@ -1,8 +1,9 @@
 /* About.css */
 .about-container {
-  width: 250px;
+  width: 200px;
+  height: 300px;
   padding: 20px;
-  border-radius: 2px;
+  border-radius: 3px;
   box-sizing: border-box;
   position: absolute;
   border: 1px solid #661E23;
@@ -11,6 +12,8 @@
   padding-right: 10px;
   left: 0;
   top: 0;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .about-container h2 {
@@ -20,5 +23,5 @@
 
 .about-container p {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.2;
 }

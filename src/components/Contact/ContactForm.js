@@ -9,6 +9,8 @@ const ContactForm = () => {
     message: ""
   });
 
+  const [errorMessage, setErrorMessage] = useState(null);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -23,6 +25,14 @@ const ContactForm = () => {
     } catch (error) {
       console.error(error);
       // Handle error (e.g., show an error message to the user)
+    
+      if (error.response && error.response.status === 404) {
+        // Server endpoint not found
+        setErrorMessage("שגיאה בשליחת הטופס): אפשר לנסות שוב מאוחר יותר.");
+      } else {
+        // Other error
+        setErrorMessage("Error submitting the form. Please try again later.");
+      }  
     }
   };
 
@@ -72,6 +82,11 @@ const ContactForm = () => {
         </table>
         <button type="submit">מחכה לשמוע</button>
       </form>
+      {errorMessage && (
+        <div className="error-message">
+          <p>{errorMessage}</p>
+        </div>
+      )}
     </div>
   );
 };

@@ -25,8 +25,8 @@ const Poems = () => {
         <div className="poem-content" dangerouslySetInnerHTML={createMarkup(currentPoem.content)} />
       </div>
       <div className="navigation-buttons">
-        <button onClick={handlePrevPoem}>&lt; </button>
-        <button onClick={handleNextPoem}> &gt;</button>
+        <button className="arrow-button" onClick={handlePrevPoem}>&lt;הקודם</button>
+        <button className="arrow-button" onClick={handleNextPoem}>הבא&gt;</button>
       </div>
     </div>
   );

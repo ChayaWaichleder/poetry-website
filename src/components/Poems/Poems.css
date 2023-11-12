@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   direction: rtl;
-  font-size: 15px;
+  font-size: 17px;
   align-items: center; /* Center content horizontally */
   padding: 20px;
 }
@@ -21,7 +21,7 @@
   overflow: hidden;
   text-align: right;
   position: relative;
-  column-count: 2; /* Number of columns you want */
+  column-count: 2; 
   column-gap: 20px; /* Gap between columns */
   column-fill: auto; /* Only break text into columns when necessary */
   -webkit-column-span: all;
@@ -29,6 +29,8 @@
   column-span: all;
   overflow: hidden; /* Hide overflowing text */
   padding: 30px;
+  line-height: 1.5;
+  user-select: none;
 }
 
 .poem-card::before {
@@ -38,7 +40,7 @@
   right: 10px;
   bottom: 10px;
   left: 10px;
-  border: 2px solid #8B4513; /* Dark brown border */
+  border: 2px solid #8B4513; 
   border-radius: 8px;
 }
 
@@ -59,14 +61,19 @@
   justify-content: space-between;
   width: 100%;
   margin-top: 10px;
+  
 }
 
-button {
-  border: none;
-  background-color: transparent;
-  font-size: 24px;
+
+.arrow-button {
+  font-size: 14px;
   cursor: pointer;
-  color: #d8483c; 
+  color: #661E23;
+  background-color: transparent;
+  border: 1px solid #661E23;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
 }
 
 .poem-title {
