@@ -1,22 +1,22 @@
 .poem-container {
-  height: 650px; /* Fixed height for the container */
+  height: 100%; /* Fixed height for the container */
   width: 100%; /* Full width */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   direction: rtl;
   font-size: 17px;
   align-items: center; /* Center content horizontally */
   padding: 20px;
-}
+  position: relative;
+  }
 
 .poem-card {
   flex: 1;
-  width: 100%;
+  width: 80%;
   max-width: 600px;
   padding: 20px;
   box-sizing: border-box;
-  background-color: transparent; 
+  background-color: #f7f4d1; 
   border-radius: 10px;
   overflow: hidden;
   text-align: right;
@@ -31,6 +31,7 @@
   padding: 30px;
   line-height: 1.5;
   user-select: none;
+  position: relative;
 }
 
 .poem-card::before {
@@ -54,23 +55,25 @@
 
 .poems {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .navigation-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-top: 10px;
-  
+  width: 60%;
 }
 
 
 .arrow-button {
   font-size: 14px;
-  cursor: pointer;
   color: #661E23;
   background-color: transparent;
-  border: 1px solid #661E23;
   border-radius: 50%;
   border: none;
   text-align: center;
