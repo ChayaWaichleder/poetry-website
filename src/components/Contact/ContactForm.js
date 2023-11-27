@@ -24,15 +24,14 @@ const ContactForm = () => {
       // Handle success (e.g., show a success message to the user)
     } catch (error) {
       console.error(error);
-      // Handle error (e.g., show an error message to the user)
-    
+
       if (error.response && error.response.status === 404) {
         // Server endpoint not found
-        setErrorMessage("שגיאה בשליחת הטופס): אפשר לנסות שוב מאוחר יותר.");
+        setErrorMessage("  שגיאה בשליחת הטופס): אפשר לנסות שוב מאוחר יותר.");
       } else {
         // Other error
         setErrorMessage("Error submitting the form. Please try again later.");
-      }  
+      }
     }
   };
 

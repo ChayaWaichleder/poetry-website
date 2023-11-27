@@ -13,7 +13,7 @@ const Contact = () => {
                 <h2>גם לכם יש מה לומר?</h2>
                 <p>
                   אשמח לשמוע(:
-                  שלחו לי מייל ל:<strong>{/* Add a comment inside braces */}</strong>contact@example.com
+                  שלחו לי מייל ל:<strong>{/* Add a comment inside braces */}</strong>cgw9219@gmail.com
                   <br />
                   או מלאו פרטים כאן
                 </p>

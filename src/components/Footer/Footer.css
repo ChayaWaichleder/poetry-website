@@ -2,27 +2,24 @@
 .footer {
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     direction: rtl;
     padding: 1px 20px 0px 20px;
-    /*border-top: 1px solid #8B4513;
-    background-color: #C0B585; */   
-    color: #8B4513; 
+    /*border-top: 1px solid #8B4513; */
+    background-color: #473525;  
+    color: #C0B585; 
     position: fixed;
     bottom: 0;
     left: 0;
-    margin-left: 15%;
-    margin-bottom: 10px;
-    width: 20%;
+    width: 100%;
     height: 30px;
     z-index: 1;
   }
 
   .click {
     text-decoration: none;
-    color: #8B4513;
-    border-top: #8B4513 1px solid;
+    color: #C0B585; 
+    /*border-top: #8B4513 1px solid;*/
     border-radius: 2px;
     padding: 1px 20px 0px 20px;
     font-size: 16px;
@@ -30,8 +27,8 @@
 
 
   .click:hover {
-    color: #8B4513;
+    /*color: #8B4513;*/
     cursor: pointer;
-    background-color: #C0B585;   
+    font-weight: bolder;   
   }
 

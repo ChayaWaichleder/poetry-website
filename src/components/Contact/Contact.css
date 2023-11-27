@@ -11,10 +11,12 @@
   border-radius: 3px;
   text-align: right;
   direction: rtl;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 20px;
   background-color: #C0B585;
   box-shadow: 12px;
+  font-family: 'Assistant', sans-serif;
+
 }
 
 .contact-container h2 {

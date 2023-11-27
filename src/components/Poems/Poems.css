@@ -13,7 +13,7 @@
 .poem-card {
   flex: 1;
   width: 80%;
-  max-width: 600px;
+  max-width: 750px;
   padding: 20px;
   box-sizing: border-box;
   background-color: #f7f4d1; 
@@ -21,7 +21,7 @@
   overflow: hidden;
   text-align: right;
   position: relative;
-  column-count: 2; 
+  column-count: 3; 
   column-gap: 20px; /* Gap between columns */
   column-fill: auto; /* Only break text into columns when necessary */
   -webkit-column-span: all;
@@ -66,7 +66,7 @@
   transform: translateY(-50%); /* Center vertically */
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 70%;
 }
 
 

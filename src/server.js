@@ -5,19 +5,16 @@ const bodyParser = require('body-parser');
 require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
-
+/*
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// OPTIONS route for CORS preflight request
-app.options('/send-email', cors());
-
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL, // Use environment variable for email
-    pass: process.env.PASSWORD // Use environment variable for password
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD
   }
 });
 
@@ -40,9 +37,9 @@ app.post('/send-email', (req, res) => {
       res.status(200).send('Email Sent Successfully');
     }
   });
-});
+});*/
 
-const PORT = process.env.PORT || 3456;
+const PORT =  3456;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
