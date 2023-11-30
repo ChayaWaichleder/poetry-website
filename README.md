@@ -7,12 +7,7 @@ Welcome to the Poetry Website project! This web application allows users to expl
 ## Table of Contents
 
 - [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
 - [Deployment](#deployment)
 
@@ -34,7 +29,7 @@ Welcome to the Poetry Website project! This web application allows users to expl
 
 ## Deployment
 
-The Poetry Website is deployed on Vercel. You can access it here.
+The Poetry Website is deployed on Vercel. You can access it [here](https://poetry-website-chaya.vercel.app/).
 
 ## License
 
