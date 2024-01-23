@@ -2,20 +2,27 @@
 import React from "react";
 import "./Footer.css";
 
-const Footer = ({ toggleAbout, toggleContact }) => {
+const Footer = ({ toggleAbout, togglePoems, toggleContact }) => {
   return (
     <div className="footer">
-      <div className="about-click">
-        <a href="#" className="click" onClick={toggleAbout}>
-        אודות
-      </a>{" "}
+      <div className="about-click" onClick={() => { toggleAbout();  }}>        
+      <span className="link">
+        אודות 
+      </span>
+
       </div>
-      
-      <div className="contact-click">
-        <a href="#" className="click" onClick={toggleContact}>
+
+      <div className="poems-click" onClick={() => { togglePoems();  }}>        
+      <span className="link">
+        שירים 
+      </span>
+      </div>
+
+      <div className="contact-click" onClick={() => { toggleContact();  }}>        
+      <span className="link">
         יצירת קשר
-      </a>
-      </div>
+        </span>
+       </div>
     </div>
   );
 };

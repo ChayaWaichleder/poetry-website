@@ -9,3 +9,11 @@ table {
 tr {
     width: 100%;
 }
+
+.line-space {
+    line-height: 1.5;
+}
+
+.error-message {
+    margin-bottom: 20px;
+}

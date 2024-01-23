@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
-/*
+app.set('tls' , {minVersion: 'TLSv1.2'});
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,14 +19,15 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-app.post('/send-email', (req, res) => {
-  const { name, email, message } = req.body;
+app.post('/send-email', async (req, res) => {
+  const { to, email, text } = req.body;
+  
 
   const mailOptions = {
     from: process.env.EMAIL,
-    to: 'cwebstudio123@gmail.com',
+    to: 'c8485088@gmail.com',
     subject: 'New Contact Form Submission',
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+    text: `Name: ${to}\nEmail: ${email}\nMessage: ${text}`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -37,7 +39,7 @@ app.post('/send-email', (req, res) => {
       res.status(200).send('Email Sent Successfully');
     }
   });
-});*/
+});
 
 const PORT =  3456;
 app.listen(PORT, () => {

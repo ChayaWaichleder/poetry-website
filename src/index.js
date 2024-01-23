@@ -14,6 +14,7 @@ root.render(
     <Router>
      {/* Wrap your App component with AuthProvider */}
       <App />
+      
     </Router>
   </React.StrictMode>,
 );

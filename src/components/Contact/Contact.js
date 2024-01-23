@@ -12,10 +12,10 @@ const Contact = () => {
               <div className="contact-info">
                 <h2>גם לכם יש מה לומר?</h2>
                 <p>
-                  אשמח לשמוע(:
-                  שלחו לי מייל ל:<strong>{/* Add a comment inside braces */}</strong>cgw9219@gmail.com
+                  אשמח לשמוע(:<br></br>
+                  שלחו לי מייל <strong>{/* Add a comment inside braces */}</strong>c8485088@gmail.com
                   <br />
-                  או מלאו פרטים כאן
+                  או מלאו פרטים כאן:
                 </p>
               </div>
             </td>

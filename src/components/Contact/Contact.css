@@ -1,27 +1,29 @@
 /* Contact.css */
 .contact-container {
-  width: 200px; /* Set the width of the contact container */
-  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  width: 500px; /* Set the width of the contact container */
+  max-width: 80%; /* Ensure it doesn't exceed the viewport width */
+  height: 380px;
   padding: 10px;
   box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 350px;
+  position: relative;
   border-radius: 3px;
-  text-align: right;
+  text-align: center;
   direction: rtl;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 20px;
   background-color: #C0B585;
   box-shadow: 12px;
   font-family: 'Assistant', sans-serif;
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the container */
 }
 
 .contact-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  margin-top: 10px;
   z-index: 2;
 }
 
@@ -40,11 +42,11 @@
 .contact-form button {
   width: calc(100% - 10px); /* Adjusted width to consider padding */
   padding: 5px;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   font-size: 14px;
   height: 40px;
-  border-radius: 2px;
+  border-radius: 3px;
   text-align: right;
   font-family: 'Assistant', sans-serif;
   border: 1px solid #ccc;
@@ -66,8 +68,12 @@
 
 .form {
   width: 100%; /* Set form width to 100% */
+  margin-bottom: 20px;
 }
+
 
 h2, p {
   margin: 0px;
+  line-height: 30px;
+  margin-bottom: 1px;
 }

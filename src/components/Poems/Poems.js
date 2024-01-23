@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Poems.css";
 import { poems } from "./poemsList"; // Import the poems array directly
 
-const Poems = () => {
+const Poems = ({ isAboutOpen, isContactOpen }) => {
   const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
   const currentPoem = poems[currentPoemIndex];
 

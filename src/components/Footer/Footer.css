@@ -1,11 +1,9 @@
-/* Footer.css */
-.footer {
+  .footer {
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     direction: rtl;
     padding: 1px 20px 0px 20px;
-    /*border-top: 1px solid #8B4513; */
     background-color: #473525;  
     color: #C0B585; 
     position: fixed;
@@ -16,19 +14,60 @@
     z-index: 1;
   }
 
-  .click {
+  .footer.open {
+    height: 60px; /* Adjust the height when About or Contact is open */
+  }
+
+  .link {
     text-decoration: none;
     color: #C0B585; 
-    /*border-top: #8B4513 1px solid;*/
     border-radius: 2px;
-    padding: 1px 20px 0px 20px;
+    padding: 1px 80px;
+    margin: 0;
     font-size: 16px;
-  }
-
-
-  .click:hover {
-    /*color: #8B4513;*/
     cursor: pointer;
-    font-weight: bolder;   
   }
+
+
+  .link:hover {
+    color: #8B4513;
+    font-weight: bolder;
+  }
+  
+
+  .popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.5s; /* Add a smooth transition effect for the transform property */
+    transform: translateY(100%); /* Initially hidden below the screen */
+  }
+  
+  .popup.active {
+    transform: translateY(0);
+  }
+
+  .about-click {
+    border-left: #C0B585 solid 2px;
+  }
+
+  .contact-click {
+    border-right: #C0B585 solid 2px;
+  }
+
+
+  @media (max-width: 768px) {
+  .link {
+    padding: 1px 10px; /* Adjust the padding for responsive mode */
+  }
+  .link:hover {
+    color: #8B4513;
+  }
+}
+
 

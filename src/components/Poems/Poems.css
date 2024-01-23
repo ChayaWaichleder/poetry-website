@@ -8,6 +8,9 @@
   align-items: center; /* Center content horizontally */
   padding: 20px;
   position: relative;
+  z-index: 0;
+  right: auto;
+  left: auto;
   }
 
 .poem-card {
@@ -66,7 +69,7 @@
   transform: translateY(-50%); /* Center vertically */
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
 }
 
 
@@ -77,6 +80,7 @@
   border-radius: 50%;
   border: none;
   text-align: center;
+  border: none;
 }
 
 .poem-title {
@@ -87,3 +91,4 @@
 .poem-content {
   color: #6D533E; 
 }
+

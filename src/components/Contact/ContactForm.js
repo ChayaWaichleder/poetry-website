@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./ContactForm.css"; // Import the CSS file for styling if you have one
 
+
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,6 +19,8 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    
 
     try {
       const response = await axios.post("http://localhost:3456/send-email", formData);
@@ -86,6 +90,7 @@ const ContactForm = () => {
           <p>{errorMessage}</p>
         </div>
       )}
+      <div className="line-space" />
     </div>
   );
 };
