@@ -25,9 +25,17 @@
   overflow: hidden;
   text-align: right;
   position: relative;
+  column-count: 3; 
+  column-gap: 20px; /* Gap between columns */
+  column-fill: auto; /* Only break text into columns when necessary */
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+  overflow: hidden; /* Hide overflowing text */
   padding: 30px;
   line-height: 1.4;
   user-select: none;
+  position: relative;
   font-size: 18px;
   font-weight: 500 ;
 }
@@ -88,14 +96,17 @@
 }
 
 .poem-content {
-  color: #6D533E;
-  text-align: right; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
   column-count: 3;
-  column-gap: 20px;
-  column-fill: auto;
-  -webkit-column-span: all;
-  -moz-column-span: all;
-  column-span: all;
+  align-items: center;
+  color: #6D533E; 
+  text-align: right;
+  line-height: 1.4;
+  user-select: none;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
