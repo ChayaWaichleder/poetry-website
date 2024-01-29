@@ -21,7 +21,7 @@ const Poems = ({ isAboutOpen, isContactOpen }) => {
   return (
     <div className="poem-container">
       <div className="poem-card">
-        <h2 className="poem-title">{currentPoem.title}</h2> {/* Access the title property directly */}
+        <div className="poem-title"><h2>{currentPoem.title}</h2></div>
         <div className="poem-content" dangerouslySetInnerHTML={createMarkup(currentPoem.content)} />
       </div>
       <div className="navigation-buttons">

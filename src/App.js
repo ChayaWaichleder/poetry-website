@@ -42,8 +42,8 @@ const App = () => {
       <div className="content-container">
       {showAbout && <About toggleAbout={toggleAbout} />}
       {showContact && <Contact toggleContact={toggleContact} />}
-      {poemsVisible && !showAbout && !showContact && <Poems />}      <Footer toggleAbout={toggleAbout} togglePoems={togglePoems} toggleContact={toggleContact} />
-      <Footer toggleAbout={toggleAbout} togglePoems={togglePoems} toggleContact={toggleContact} />    
+      {poemsVisible && !showAbout && !showContact && <Poems />}      
+      <Footer toggleAbout={toggleAbout} togglePoems={togglePoems} toggleContact={toggleContact} />
     </div>
     </div>
   );

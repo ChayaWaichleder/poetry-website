@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1rem;
-}
+
 
 body {
   min-height: 100vh;
@@ -45,18 +42,3 @@ body {
   color: var(--primary-color); /* Primary color for text */
 
 }
-
-.navbar {
-  background-color: var(--secondary-color); /* Secondary color for the navbar */
-}
-
-.poem-card {
-  background-color: transparent; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-  padding: 20px;
-  border-radius: 10px; /* Rounded corners for elegance */
-}
-
-
-
-

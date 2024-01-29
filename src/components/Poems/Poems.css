@@ -11,6 +11,7 @@
   z-index: 0;
   right: auto;
   left: auto;
+  font-family: 'Assistant', sans-serif;
   }
 
 .poem-card {
@@ -24,17 +25,11 @@
   overflow: hidden;
   text-align: right;
   position: relative;
-  column-count: 3; 
-  column-gap: 20px; /* Gap between columns */
-  column-fill: auto; /* Only break text into columns when necessary */
-  -webkit-column-span: all;
-  -moz-column-span: all;
-  column-span: all;
-  overflow: hidden; /* Hide overflowing text */
   padding: 30px;
-  line-height: 1.5;
+  line-height: 1.4;
   user-select: none;
-  position: relative;
+  font-size: 18px;
+  font-weight: 500 ;
 }
 
 .poem-card::before {
@@ -81,14 +76,34 @@
   border: none;
   text-align: center;
   border: none;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .poem-title {
   color: #6D533E; 
   padding-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .poem-content {
-  color: #6D533E; 
+  color: #6D533E;
+  text-align: right; /* Adjust as needed */
+  column-count: 3;
+  column-gap: 20px;
+  column-fill: auto;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    line-height: 0.8;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+}
