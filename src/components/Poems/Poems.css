@@ -1,11 +1,12 @@
+
 .poem-container {
-  height: 100%; /* Fixed height for the container */
-  width: 100%; /* Full width */
+  height: 100%; 
+  width: 100%; 
   display: flex;
   flex-direction: column;
   direction: rtl;
   font-size: 17px;
-  align-items: center; /* Center content horizontally */
+  align-items: center; 
   padding: 20px;
   position: relative;
   z-index: 0;
@@ -18,45 +19,31 @@
   flex: 1;
   width: 80%;
   max-width: 750px;
-  padding: 20px;
+  overflow: hidden; 
+  padding: 20px;/*
   box-sizing: border-box;
   background-color: #f7f4d1; 
   border-radius: 10px;
-  overflow: hidden;
   text-align: right;
-  position: relative;
   column-count: 3; 
-  column-gap: 20px; /* Gap between columns */
-  column-fill: auto; /* Only break text into columns when necessary */
-  -webkit-column-span: all;
-  -moz-column-span: all;
-  column-span: all;
-  overflow: hidden; /* Hide overflowing text */
+  column-gap: 20px; 
+  column-fill: auto; 
   padding: 30px;
   line-height: 1.4;
-  user-select: none;
+  user-select: none;*/
   position: relative;
   font-size: 18px;
   font-weight: 500 ;
-}
-
-.poem-card::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  bottom: 10px;
-  left: 10px;
   border: 2px solid #8B4513; 
   border-radius: 8px;
 }
-
+/*
 .poem-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   margin-bottom: 10px;
-  border-radius: 8px; /* Apply border radius to the image */
+  border-radius: 8px; 
 }
 
 .poems {
@@ -65,7 +52,7 @@
   flex-direction: column;
   align-items: center;
 }
-
+*/
 .navigation-buttons {
   position: absolute;
   top: 50%;
@@ -90,23 +77,35 @@
 
 .poem-title {
   color: #6D533E; 
-  padding-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
+  column-span: all;
+  display: block;
+  margin-bottom: 0;
+  height: 80px;
 }
 
+
+
 .poem-content {
-  display: flex;
-  flex-direction: column;
-  column-count: 3;
-  align-items: center;
-  color: #6D533E; 
+  flex: 1;
+  width: 80%;
+  max-width: 750px;
+  height: 480px;
+  box-sizing: border-box;
+  background-color: #f7f4d1; 
+  border-radius: 10px;
   text-align: right;
+  column-count: 3; 
+  column-gap: 40px; 
+  column-fill: auto; 
+  overflow: hidden; 
   line-height: 1.4;
   user-select: none;
   position: relative;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500 ;
+  
 }
 
 @media (max-width: 768px) {

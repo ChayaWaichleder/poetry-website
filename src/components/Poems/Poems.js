@@ -1,3 +1,4 @@
+// Poems.js
 import React, { useState } from "react";
 import "./Poems.css";
 import { poems } from "./poemsList"; // Import the poems array directly
@@ -21,12 +22,12 @@ const Poems = ({ isAboutOpen, isContactOpen }) => {
   return (
     <div className="poem-container">
       <div className="poem-card">
-        <div className="poem-title"><h2>{currentPoem.title}</h2></div>
+        <h2 className="poem-title">{currentPoem.title}</h2>
         <div className="poem-content" dangerouslySetInnerHTML={createMarkup(currentPoem.content)} />
       </div>
       <div className="navigation-buttons">
-        <button className="arrow-button" onClick={handlePrevPoem}>&lt;הקודם</button>
-        <button className="arrow-button" onClick={handleNextPoem}>הבא&gt;</button>
+        <button className="arrow-button" onClick={handlePrevPoem}>&lt; הקודם </button>
+        <button className="arrow-button" onClick={handleNextPoem}> הבא &gt;</button>
       </div>
     </div>
   );
